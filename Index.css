@@ -140,6 +140,8 @@ p{
 .hero{
     width: 100%;
 
+    min-height: 90vh;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -166,6 +168,10 @@ p{
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+
+.content-hero h1{
+    max-width: 600px;
 }
 
 .content-hero span{
@@ -243,70 +249,32 @@ section:nth-of-type(3) h1 span{
     color: #3B82F6;
 }
 
-.seguros{
-    width: 31%;
-    min-height: 420px;
+.imgSeguros{
+    width: 100%;
 
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 
-    background: white;
+    padding: 100px 80px;
 
-    padding: 28px;
+    background: #DCE6F5;
+}
 
-    margin: 1%;
+.imgSeguros img{
+    width: 30%;
+    min-width: 320px;
 
     border-radius: 24px;
-
-    text-decoration: none;
-
-    overflow: hidden;
-
-    position: relative;
 
     box-shadow: 0 8px 25px rgba(0,0,0,.08);
 
     transition: .3s ease;
 }
 
-.seguros:hover{
+.imgSeguros img:hover{
     transform: translateY(-8px);
-}
-
-.seguros div{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-
-    z-index: 2;
-}
-
-.seguros div img{
-    width: 52px;
-    height: 52px;
-
-    padding: 10px;
-
-    background: #E5EDFF;
-    border-radius: 12px;
-}
-
-.seguros h2{
-    color: #1E3A8A;
-}
-
-.seguros p{
-    font-size: .95rem;
-}
-
-.seguros > img{
-    width: 100%;
-    height: 220px;
-
-    object-fit: cover;
-
-    border-radius: 18px;
 }
 
 body > button{
@@ -335,7 +303,7 @@ body > button:hover{
 }
 
 .footer{
-    background: white;
+    background: #F7F8FB;
 
     padding: 80px;
 
@@ -413,15 +381,9 @@ body > button:hover{
     margin-bottom: 40px;
 }
 
-.benefit-item{
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.benefit-item img{
-    width: 48px;
-    height: 48px;
+.footer-benefits img{
+    width: 100%;
+    object-fit: contain;
 }
 
 .footer-cta{
@@ -483,10 +445,6 @@ body > button:hover{
         width: 100%;
     }
 
-    .seguros{
-        width: 48%;
-    }
-
     .footer-top{
         flex-direction: column;
     }
@@ -519,10 +477,6 @@ body > button:hover{
         padding: 80px 20px;
     }
 
-    .seguros{
-        width: 100%;
-    }
-
     .footer{
         padding: 50px 20px;
     }
@@ -543,5 +497,13 @@ body > button:hover{
 
     .footer-policies{
         flex-direction: column;
+    }
+
+    .imgSeguros{
+    padding: 40px 20px;
+    }
+
+    .imgSeguros img{
+    width: 100%;
     }
 }
