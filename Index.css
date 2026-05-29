@@ -233,6 +233,36 @@ p{
     max-width: 160px;
 }
 
+.flecha-container{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: -30px auto 40px auto;
+
+    position: relative;
+    z-index: 20;
+}
+
+.flecha-img{
+    width: 64px;
+    height: 64px;
+
+    padding: 18px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    object-fit: contain;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+
+    display: block;
+}
+
 section:nth-of-type(3){
     padding: 100px 80px;
 }
