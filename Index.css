@@ -116,21 +116,18 @@ p{
 
     padding: 18px;
 
+    display: flex;
     flex-direction: column;
     gap: 16px;
 
     box-shadow: 0 10px 30px rgba(0,0,0,.08);
-    
+
     opacity: 0;
     visibility: hidden;
 
     transform: translateY(10px);
 
     transition: .3s ease;
-}
-
-.menu-desplegable{
-    display: flex;
 }
 
 .menu-desplegable a{
