@@ -379,6 +379,80 @@ body > button:hover{
     background: #1E3A8A;
 }
 
+.clientes{
+    padding: 100px 80px;
+
+    background: #EFF6FB;
+}
+
+.clientes-title{
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: 0 auto 70px auto;
+}
+
+.clientes-title h1{
+    margin: 15px 0;
+}
+
+.clientes-title h1 span{
+    color: #3B82F6;
+}
+
+.clientes-title p{
+    font-size: 1.1rem;
+}
+
+.clientes-grid{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.testimonio{
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 24px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+
+    transition: .3s ease;
+}
+
+.testimonio:hover{
+    transform: translateY(-8px);
+}
+
+.estrellas{
+    font-size: 1.3rem;
+
+    color: #FBBF24;
+
+    margin-bottom: 20px;
+}
+
+.testimonio p{
+    margin-bottom: 25px;
+}
+
+.testimonio h4{
+    color: #1E3A8A;
+
+    margin-bottom: 5px;
+}
+
+.testimonio span{
+    color: #6B7280;
+
+    font-size: .95rem;
+}
+
 .footer{
     background: #F7F8FB;
 
