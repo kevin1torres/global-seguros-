@@ -201,6 +201,7 @@ p{
     );
 
     -webkit-mask-composite: source-in;
+    mask-composite: source-in;
 
     mask-image:
         linear-gradient(
