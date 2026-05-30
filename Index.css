@@ -116,14 +116,20 @@ p{
 
     padding: 18px;
 
-    display: none;
     flex-direction: column;
     gap: 16px;
 
     box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition: .3s ease;
 }
 
-.menu li:hover .menu-desplegable{
+.menu-desplegable{
     display: flex;
 }
 
@@ -135,6 +141,13 @@ p{
 
 .menu-desplegable a:hover{
     color: #3B82F6;
+}
+
+.menu-desplegable.active{
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
 }
 
 .hero{
@@ -564,10 +577,33 @@ body > button:hover{
     }
 
     .imgSeguros{
-    padding: 40px 20px;
+        padding: 40px 20px;
     }
 
     .imgSeguros img{
-    width: 100%;
+        width: 100%;
+    }
+   
+.header-scroll{
+    background: rgba(255,255,255,.92);
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.05);
+    }
+
+.content-hero,
+.img-hero{
+     opacity: 0;
+
+    transform: translateY(40px);
+
+    transition: 1s ease;
+    }
+
+.show-hero{
+    opacity: 1;
+
+    transform: translateY(0);
     }
 }
