@@ -1,5 +1,7 @@
 const botonDesplegable = document.getElementById("desplegable");
 const menuDesplegable = document.querySelector(".menu-desplegable");
+const contactoBtn = document.getElementById("contacto-btn");
+const contactDropdown = document.querySelector(".contact-dropdown");
 
 botonDesplegable.addEventListener("click", function() {
 
@@ -8,10 +10,6 @@ botonDesplegable.addEventListener("click", function() {
     console.log(menuDesplegable.classList);
 
 });
-
-const contactoBtn = document.getElementById("contacto-btn");
-
-const contactDropdown = document.querySelector(".contact-dropdown");
 
 contactoBtn.addEventListener("click", function(e){
 
