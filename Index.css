@@ -74,6 +74,18 @@ p{
     list-style: none;
 }
 
+.menu a{
+    text-decoration: none;
+    color: #111;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 400;
+}
+
+.menu a:hover{
+    color: #3B82F6;
+}
+
 .menu li{
     position: relative;
     font-size: 1rem;
@@ -677,4 +689,64 @@ body > button:hover{
 
     transform: translateY(0);
     }
+}
+
+.contact-menu{
+    position: relative;
+}
+
+.contact-dropdown{
+    position: absolute;
+
+    top: 70px;
+    right: 0;
+
+    width: 320px;
+
+    background: #FF0018;
+    color: white;
+
+    padding: 28px;
+
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition: .3s ease;
+
+    z-index: 999;
+}
+
+.contact-dropdown.active{
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.contact-dropdown p{
+    color: white;
+    margin: 0;
+}
+
+.contact-title{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+
+    margin-bottom: 10px;
+}
+
+.contact-dropdown strong{
+    font-size: 1.8rem;
+    font-weight: 700;
 }

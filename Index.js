@@ -8,3 +8,28 @@ botonDesplegable.addEventListener("click", function() {
     console.log(menuDesplegable.classList);
 
 });
+
+const contactoBtn = document.getElementById("contacto-btn");
+
+const contactDropdown = document.querySelector(".contact-dropdown");
+
+contactoBtn.addEventListener("click", function(e){
+
+    e.stopPropagation();
+
+    contactDropdown.classList.toggle("active");
+
+});
+
+document.addEventListener("click", function(e){
+
+    if(
+        !contactDropdown.contains(e.target) &&
+        !contactoBtn.contains(e.target)
+    ){
+
+        contactDropdown.classList.remove("active");
+
+    }
+
+});
