@@ -607,3 +607,206 @@ body > button:hover{
     transform: translateY(0);
     }
 }
+@media(max-width:1200px){
+
+    .seguro-principal{
+        flex-direction:column;
+
+        padding:80px 40px;
+    }
+
+    .contenido-seguro,
+    .imagen-principal{
+        width:100%;
+    }
+
+    .imagen-principal{
+        height:550px;
+    }
+
+    .seccion-beneficios{
+        flex-direction:column;
+    }
+
+    .contenido-beneficios,
+    .tarjeta-ideal{
+        width:100%;
+    }
+
+    .contenedor-coberturas{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .pasos-seguro{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .galeria-seguro{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .llamado-accion{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+}
+
+@media(max-width:768px){
+
+    .header{
+        padding:20px;
+        height:auto;
+    }
+
+    .logo{
+        font-size:1.5rem;
+    }
+
+    .menu{
+        display:none;
+    }
+
+    .header button{
+        padding:12px 18px;
+        font-size:.85rem;
+    }
+
+    .seguro-principal{
+        padding:50px 20px;
+        gap:40px;
+    }
+
+    .contenido-seguro h1{
+        font-size:3rem;
+    }
+
+    .contenido-seguro p{
+        font-size:.95rem;
+    }
+
+    .datos-seguro{
+        flex-direction:column;
+    }
+
+    .dato{
+        width:100%;
+    }
+
+    .beneficios-seguro{
+        flex-direction:column;
+    }
+
+    .botones-seguro{
+        flex-direction:column;
+    }
+
+    .botones-seguro button{
+        width:100%;
+    }
+
+    .imagen-principal{
+        height:380px;
+    }
+
+    .seccion-coberturas{
+        padding:60px 20px;
+    }
+
+    .titulo-seccion h2{
+        font-size:2.2rem;
+    }
+
+    .contenedor-coberturas{
+        grid-template-columns:1fr;
+    }
+
+    .tarjeta-cobertura{
+        padding:25px;
+    }
+
+    .seccion-beneficios{
+        padding:60px 20px;
+    }
+
+    .contenido-beneficios h2{
+        font-size:2.2rem;
+    }
+
+    .tarjeta-ideal{
+        padding:25px;
+    }
+
+    .funcionamiento{
+        padding:60px 20px;
+    }
+
+    .pasos-seguro{
+        grid-template-columns:1fr;
+    }
+
+    .galeria-seguro{
+        grid-template-columns:1fr;
+
+        padding:0 20px 60px;
+    }
+
+    .imagen-galeria{
+        height:220px;
+    }
+
+    .llamado-accion{
+        margin:0 20px 60px;
+
+        padding:35px 25px;
+    }
+
+    .llamado-accion h2{
+        font-size:2rem;
+    }
+
+    .botones-accion{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .botones-accion button{
+        width:100%;
+    }
+}
+
+@media(max-width:480px){
+
+    .contenido-seguro h1{
+        font-size:2.4rem;
+    }
+
+    .titulo-seccion h2,
+    .contenido-beneficios h2,
+    .llamado-accion h2{
+        font-size:1.8rem;
+    }
+
+    .imagen-principal{
+        height:300px;
+        border-radius:24px;
+    }
+
+    .imagen-ideal{
+        height:180px;
+    }
+
+    .icono-seguro{
+        width:55px;
+        height:55px;
+
+        font-size:1.4rem;
+    }
+
+    .dato{
+        padding:18px;
+    }
+
+    .paso{
+        padding:25px;
+    }
+}
