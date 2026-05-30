@@ -8,8 +8,7 @@
     <title>Marketplace | Global Seguros</title>
 
     <link rel="stylesheet" href="Marketplace.css">
-    <script src="marketplace.js"></script>
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
@@ -18,23 +17,68 @@
 
 <body>
 
-<header class="header">
-
-    <div class="logo">
-       <img src="C:\Users\jerem\OneDrive\Documentos\GitHub\JS1\global-seguros-\Imágenes\image 2.png" alt="logo">
-    </div>
+<section class="header">
+    <img src="C:\Users\jerem\OneDrive\Documentos\GitHub\JS1\global-seguros-\Imágenes\image 2.png" alt="logo">
 
     <ul class="menu">
-        <li>Inicio</li>
-        <li>Seguros</li>
-        <li>Clientes</li>
-        <li>Educación</li>
-        <li>Contáctanos</li>
+        <li> <button id="desplegable"> Seguros ▼ </button>
+
+         <div class="menu-desplegable">
+            <a href="#">Seguro educativo</a>
+            <a href="Error404.html">Seguro de vida</a>
+            <a href="Error404.html">Seguro de accidentes personales</a>
+            <a href="Error404.html">Seguro de pensión/renta</a>
+            <a href="Error404.html">Seguro exequial</a>
+            <a href="Error404.html">Seguro de desembargo</a>
+             </div>
+        </li>
+        <li> 
+          <a href="#clientes">Clientes</a>
+        </li>
+        <li> 
+          <a href="Error404.html">Educación</a>
+        </li>
+
+    <li class="contact-wrapper">
+
+    <button id="contacto-btn" class="contact-btn">
+        Contáctanos
+    </button>
+
+    <div class="contact-dropdown">
+
+        <p class="contact-title">
+            Lunes a viernes
+            <br>
+            8am a 5:30pm
+        </p>
+
+        <p>Desde Bogotá</p>
+
+        <strong>
+            PBX: (601) 744 0084
+        </strong>
+
+        <p>Desde cualquier parte del país</p>
+
+        <strong>
+            01 8000 910027
+        </strong>
+
+    </div>
+
+</li>
+
+    </li>
+
+    <li> 
+      
+      <button>Cotizar ahora</button> 
+    
+    </li>
     </ul>
+</section>
 
-    <button>Cotiza ahora</button>
-
-</header>
 
 <section class="hero">
 
@@ -611,6 +655,8 @@
     </div>
 
 </footer>
+
+<script src="Marketplace.js"></script>
 
 </body>
 </html>
