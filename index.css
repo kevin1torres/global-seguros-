@@ -101,18 +101,15 @@ p{
 }
 
 .contact-btn{
-    background: #3B82F6;
-    color: white;
+    border: none;
+    text-decoration: none;
+    color: #111;
 
     padding: 14px 28px;
     border-radius: 14px;
 
     font-weight: 500;
     transition: .3s ease;
-}
-
-.contact-btn:hover{
-    background: #1E3A8A;
 }
 
 .btn-cotizar{
