@@ -113,8 +113,8 @@ p{
 }
 
 .btn-cotizar{
-    background: #3B82F6 !important;
-    color: white !important;
+    background: #3B82F6;
+    color: white;
 
     padding: 14px 28px;
     border-radius: 14px;
@@ -125,7 +125,7 @@ p{
 }
 
 .btn-cotizar:hover{
-    background: #1E3A8A !important;
+    background: #1E3A8A;
 }
 
 .menu-desplegable{
