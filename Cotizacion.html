@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+
+    <link rel="stylesheet" href="Cotizacion.css">
+</head>
+<body>
+
+<section class="contacto">
+
+    <div class="header-contacto">
+        <h2>Contáctenos</h2>
+
+        <p>
+            Si desea recibir más información de nuestra compañía o solicitar
+            asesoría personalizada sobre nuestras soluciones, lo invitamos a
+            diligenciar la siguiente información y nosotros nos pondremos en
+            contacto con usted lo más pronto posible.
+        </p>
+    </div>
+
+    <div class="contenedor-formulario">
+
+        <form id="contactForm">
+
+            <div class="grid">
+
+                <div class="campo">
+                    <label>Nombres y apellidos <span>*</span></label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        maxlength="80"
+                        placeholder="Escribe tus nombres y apellidos"
+                        required>
+                    <small class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label>Cédula <span>*</span></label>
+                    <input
+                        type="text"
+                        id="cedula"
+                        maxlength="15"
+                        placeholder="Escribe el número"
+                        required>
+                    <small class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label>Correo electrónico <span>*</span></label>
+                    <input
+                        type="email"
+                        id="correo"
+                        maxlength="80"
+                        placeholder="Escribe tu dirección de correo"
+                        required>
+                    <small class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label>Número de teléfono</label>
+                    <input
+                        type="text"
+                        id="telefono"
+                        maxlength="10"
+                        placeholder="Escribe tu número">
+                    <small class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label>Número de celular <span>*</span></label>
+                    <input
+                        type="text"
+                        id="celular"
+                        maxlength="10"
+                        placeholder="Escribe tu número"
+                        required>
+                    <small class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label>Ciudad <span>*</span></label>
+
+                    <select id="ciudad" required>
+                        <option value="">Selecciona tu ciudad</option>
+                        <option>Bogotá</option>
+                        <option>Medellín</option>
+                        <option>Cali</option>
+                        <option>Barranquilla</option>
+                        <option>Cartagena</option>
+                    </select>
+
+                    <small class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label>Tipo de consulta <span>*</span></label>
+
+                    <select id="consulta" required>
+                        <option value="">Selecciona una opción</option>
+                        <option>Quiero un seguro</option>
+                        <option>Información de mis productos</option>
+                        <option>Sugerencias</option>
+                    </select>
+
+                    <small class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label>¿Cómo se enteró del producto? <span>*</span></label>
+
+                    <select id="origen" required>
+                        <option value="">Selecciona una opción</option>
+                        <option>Google</option>
+                        <option>Redes Sociales</option>
+                        <option>Recomendación</option>
+                        <option>Publicidad</option>
+                    </select>
+
+                    <small class="error"></small>
+                </div>
+
+                <div class="campo ancho-completo">
+                    <label>Producto <span>*</span></label>
+
+                    <select id="producto" required>
+                        <option value="">Selecciona el que te interesa</option>
+                        <option>Seguro Educativo</option>
+                        <option>Seguro de Vida</option>
+                        <option>Seguro de Accidentes Personales</option>
+                        <option>Seguro de Pensión</option>
+                        <option>Seguro de Desembargo</option>
+                    </select>
+
+                    <small class="error"></small>
+                </div>
+
+                <div class="campo ancho-completo">
+                    <label>Sugerencias y observaciones</label>
+
+                    <textarea
+                        id="observaciones"
+                        maxlength="300"
+                        placeholder="Escribe tus sugerencias y/o tus observaciones"></textarea>
+
+                    <div class="contador">
+                        <span id="contador">0</span>/300
+                    </div>
+
+                    <small class="error"></small>
+                </div>
+
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="politica" required>
+
+                <label for="politica">
+                    Acepto el tratamiento de datos personales.
+                </label>
+            </div>
+
+            <a href="#" class="politica-link">
+                Ver política de tratamiento de datos
+            </a>
+
+            <button type="submit" class="btn-enviar">
+                Enviar
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<script src="Cotizacion.js"></script>
+
+</body>
+</html>
