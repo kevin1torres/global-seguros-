@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+}
+
+.contacto{
+    width:100%;
+}
+
+.header-contacto{
+    background:#eef1f7;
+    padding:50px 20px;
+    text-align:center;
+}
+
+.header-contacto h2{
+    color:#003b9c;
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.header-contacto p{
+    max-width:1100px;
+    margin:auto;
+    color:#002f7d;
+    font-size:18px;
+    line-height:1.5;
+}
+
+.contenedor-formulario{
+    max-width:1200px;
+    margin:50px auto;
+    padding:0 20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.ancho-completo{
+    grid-column:1 / -1;
+}
+
+.campo{
+    display:flex;
+    flex-direction:column;
+}
+
+.campo label{
+    color:#003b9c;
+    margin-bottom:6px;
+    font-size:16px;
+}
+
+.campo span{
+    color:red;
+}
+
+.campo input,
+.campo select,
+.campo textarea{
+    width:100%;
+    border:1px solid #d7d7d7;
+    padding:12px 15px;
+    font-size:16px;
+    outline:none;
+}
+
+.campo textarea{
+    resize:none;
+    min-height:120px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus{
+    border-color:#003b9c;
+}
+
+.contador{
+    text-align:right;
+    margin-top:5px;
+    color:#666;
+    font-size:13px;
+}
+
+.error{
+    color:#d32f2f;
+    margin-top:5px;
+    font-size:13px;
+}
+
+.check{
+    margin-top:15px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.politica-link{
+    display:block;
+    margin-top:8px;
+    color:#003b9c;
+    text-decoration:none;
+}
+
+.btn-enviar{
+    margin-top:20px;
+    width:350px;
+    height:50px;
+    border:none;
+    background:#ffd100;
+    color:#002f7d;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:4px;
+    transition:.3s;
+}
+
+.btn-enviar:hover{
+    transform:translateY(-2px);
+}
+
+@media(max-width:768px){
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .btn-enviar{
+        width:100%;
+    }
+
+    .header-contacto h2{
+        font-size:34px;
+    }
+}
