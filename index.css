@@ -719,3 +719,19 @@ body > button:hover{
     transform: translateY(0);
     }
 }
+.card{
+    opacity:0;
+    transform:translateY(40px);
+}
+
+.card.mostrar{
+    opacity:1;
+    transform:translateY(0);
+    transition:.7s ease;
+}
+
+.filters button.activo{
+    background:#3B82F6;
+    color:white;
+    border-color:#3B82F6;
+}
