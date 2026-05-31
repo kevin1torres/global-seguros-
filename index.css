@@ -115,8 +115,20 @@ p{
     background: #1E3A8A;
 }
 
-.header button:last-child:hover{
-    background: #1E3A8A;
+.btn-cotizar{
+    background: #3B82F6 !important;
+    color: white !important;
+
+    padding: 14px 28px;
+    border-radius: 14px;
+
+    font-weight: 500;
+
+    transition: .3s ease;
+}
+
+.btn-cotizar:hover{
+    background: #1E3A8A !important;
 }
 
 .menu-desplegable{
