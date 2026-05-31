@@ -100,7 +100,7 @@ p{
     font-family: inherit;
 }
 
-.header button:last-child{
+.contact-btn{
     background: #3B82F6;
     color: white;
 
@@ -108,8 +108,11 @@ p{
     border-radius: 14px;
 
     font-weight: 500;
-
     transition: .3s ease;
+}
+
+.contact-btn:hover{
+    background: #1E3A8A;
 }
 
 .header button:last-child:hover{
@@ -719,19 +722,50 @@ body > button:hover{
     transform: translateY(0);
     }
 }
-.card{
-    opacity:0;
-    transform:translateY(40px);
+
+.contact-menu{
+    position: relative;
 }
 
-.card.mostrar{
-    opacity:1;
-    transform:translateY(0);
-    transition:.7s ease;
+.contact-dropdown{
+    position: absolute;
+    top: 60px;
+    right: 0;
+
+    width: 280px;
+
+    background: #ff0020;
+    color: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition: .3s ease;
+
+    z-index: 2000;
 }
 
-.filters button.activo{
-    background:#3B82F6;
-    color:white;
-    border-color:#3B82F6;
+.contact-dropdown.active{
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.contact-dropdown p,
+.contact-dropdown strong{
+    color: white;
+}
+
+.contact-title{
+    font-weight: 700;
+    margin-bottom: 15px;
 }
