@@ -74,7 +74,7 @@ p{
     list-style: none;
 }
 
-.menu a{
+.menu a:not(.btn-cotizar){
     text-decoration: none;
     color: #111;
     font-size: 1rem;
@@ -92,7 +92,7 @@ p{
     cursor: pointer;
 }
 
-.menu button:not(.btn-cotizar){
+.menu button{
     border: none;
     background: none;
     cursor: pointer;
@@ -112,9 +112,10 @@ p{
 }
 
 .btn-cotizar{
+    text-decoration: none;
     background: #3B82F6;
     color: white;
-    
+
     border: none;
     padding: 14px 28px;
     border-radius: 14px;

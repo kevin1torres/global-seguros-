@@ -61,7 +61,7 @@ img{
     list-style: none;
 }
 
-.menu a{
+.menu a :not(.btn-cotizar){
     text-decoration: none;
     color: #111;
     font-size: 1rem;
@@ -79,7 +79,7 @@ img{
     cursor: pointer;
 }
 
-.menu button:not(.btn-cotizar){
+.menu button{
     border: none;
     background: none;
     cursor: pointer;
@@ -95,6 +95,7 @@ img{
 }
 
 .btn-cotizar{
+    text-decoration: none;
     background: #3B82F6;
     color: white;
     border: none;
