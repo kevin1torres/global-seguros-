@@ -74,7 +74,7 @@ p{
     list-style: none;
 }
 
-.menu a{
+.menu a:not(.btn-cotizar){
     text-decoration: none;
     color: #111;
     font-size: 1rem;
@@ -100,10 +100,23 @@ p{
     font-family: inherit;
 }
 
-.header button:last-child{
+.contact-btn{
+    border: none;
+    text-decoration: none;
+    color: #111;
+
+    border-radius: 14px;
+
+    font-weight: 500;
+    transition: .3s ease;
+}
+
+.btn-cotizar{
+    text-decoration: none;
     background: #3B82F6;
     color: white;
 
+    border: none;
     padding: 14px 28px;
     border-radius: 14px;
 
@@ -112,7 +125,7 @@ p{
     transition: .3s ease;
 }
 
-.header button:last-child:hover{
+.btn-cotizar:hover{
     background: #1E3A8A;
 }
 
@@ -718,4 +731,51 @@ body > button:hover{
 
     transform: translateY(0);
     }
+}
+
+.contact-menu{
+    position: relative;
+}
+
+.contact-dropdown{
+    position: absolute;
+    top: 60px;
+    right: 0;
+
+    width: 280px;
+
+    background: #ff0020;
+    color: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition: .3s ease;
+
+    z-index: 2000;
+}
+
+.contact-dropdown.active{
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.contact-dropdown p,
+.contact-dropdown strong{
+    color: white;
+}
+
+.contact-title{
+    font-weight: 700;
+    margin-bottom: 15px;
 }
