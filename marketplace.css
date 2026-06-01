@@ -142,8 +142,9 @@ a{
 .menu-desplegable.active{
     opacity: 1;
     visibility: visible;
-}
     transform: translateY(0);
+}
+
 .contact-btn{
     color:#111;
 
