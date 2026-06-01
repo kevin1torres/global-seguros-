@@ -84,69 +84,12 @@ a{
     font-family: inherit;
 }
 
-.header button:last-child{
-    background: #3B82F6;
-    color: white;
-
-    padding: 14px 28px;
-    border-radius: 14px;
-
-    font-weight: 500;
-
-    transition: .3s ease;
-}
-
-.header button:last-child:hover{
-    background: #1E3A8A;
-}
-
-.menu-desplegable{
-    position: absolute;
-    top: 45px;
-    left: 0;
-
-    width: 220px;
-
-    background: white;
-    border-radius: 16px;
-
-    padding: 18px;
-
-    flex-direction: column;
-    gap: 16px;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,.08);
-    
-    opacity: 0;
-    visibility: hidden;
-
-    transform: translateY(10px);
-
-    transition: .3s ease;
-}
-
-.menu-desplegable{
-    display: flex;
-}
-
-.menu-desplegable a{
+.contact-btn{
+    border: none;
     text-decoration: none;
     color: #111;
-    transition: .3s;
-}
 
-.menu-desplegable a:hover{
-    color: #3B82F6;
-}
-
-.menu-desplegable.active{
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.contact-btn{
-    color:#111;
+    border-radius: 14px;
 
     font-weight: 500;
     transition: .3s ease;
@@ -170,7 +113,6 @@ a{
     background: #1E3A8A;
 }
 
-
 .menu-desplegable{
     position: absolute;
     top: 45px;
@@ -213,8 +155,6 @@ a{
 
     transform: translateY(0);
 }
-
-
 .hero{
     width:100%;
     padding:70px 80px 40px;
