@@ -9,6 +9,134 @@ body{
     background:#f3f3f3;
 }
 
+.header{
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 80px;
+
+    background: #FFFFFF;
+    border-bottom: 1px solid #E5E7EB;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header img{
+    width: 180px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    list-style: none;
+}
+
+.menu a:not(.btn-cotizar){
+    text-decoration: none;
+    color: #111;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 400;
+}
+
+.menu a:hover{
+    color: #3B82F6;
+}
+
+.menu li{
+    position: relative;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.menu button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.contact-btn{
+    border: none;
+    text-decoration: none;
+    color: #111;
+
+    border-radius: 14px;
+
+    font-weight: 500;
+    transition: .3s ease;
+}
+
+.btn-cotizar{
+    text-decoration: none;
+    background: #3B82F6;
+    color: white;
+
+    border: none;
+    padding: 14px 28px;
+    border-radius: 14px;
+
+    font-weight: 500;
+
+    transition: .3s ease;
+}
+
+.btn-cotizar:hover{
+    background: #1E3A8A;
+}
+
+.menu-desplegable{
+    position: absolute;
+    top: 45px;
+    left: 0;
+
+    width: 220px;
+
+    background: white;
+    border-radius: 16px;
+
+    padding: 18px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition: .3s ease;
+}
+
+.menu-desplegable a{
+    text-decoration: none;
+    color: #111;
+    transition: .3s;
+}
+
+.menu-desplegable a:hover{
+    color: #3B82F6;
+}
+
+.menu-desplegable.active{
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
 .contacto{
     width:100%;
 }
@@ -143,4 +271,51 @@ body{
     .header-contacto h2{
         font-size:34px;
     }
+}
+
+.contact-menu{
+    position: relative;
+}
+
+.contact-dropdown{
+    position: absolute;
+    top: 60px;
+    right: 0;
+
+    width: 280px;
+
+    background: #ff0020;
+    color: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition: .3s ease;
+
+    z-index: 2000;
+}
+
+.contact-dropdown.active{
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.contact-dropdown p,
+.contact-dropdown strong{
+    color: white;
+}
+
+.contact-title{
+    font-weight: 700;
+    margin-bottom: 15px;
 }
