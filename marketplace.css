@@ -58,7 +58,7 @@ a{
     list-style: none;
 }
 
-.menu a :not(.btn-cotizar){
+.menu a:not(.btn-cotizar){
     text-decoration: none;
     color: #111;
     font-size: 1rem;
@@ -155,10 +155,8 @@ a{
     text-decoration: none;
     background: #3B82F6;
     color: white;
-    border: none;
-    opacity: 1;
-    visibility: visible;
 
+    border: none;
     padding: 14px 28px;
     border-radius: 14px;
 
@@ -170,6 +168,7 @@ a{
 .btn-cotizar:hover{
     background: #1E3A8A;
 }
+
 
 .menu-desplegable{
     position: absolute;
