@@ -67,8 +67,6 @@ form.addEventListener("submit", function(e){
     .querySelectorAll(".error")
     .forEach(error => error.textContent = "");
 
-    /* Nombre */
-
     if(nombre.value.trim() === ""){
         setError(nombre,"Ingrese sus nombres y apellidos");
         valido = false;
@@ -87,15 +85,11 @@ form.addEventListener("submit", function(e){
         setError(cedula,"Mínimo 6 dígitos");
         valido = false;
     }
-
-    /* Correo */
-
     if(!regexCorreo.test(correo.value)){
         setError(correo,"Correo inválido");
         valido = false;
     }
 
-    /* Celular */
 
     if(celular.value.length !== 10){
         setError(
