@@ -31,6 +31,24 @@ img{
     display:block;
 }
 
+.header{
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 80px;
+
+    background: #FFFFFF;
+    border-bottom: 1px solid #E5E7EB;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 .header img{
     width: 180px;
 }
@@ -61,7 +79,7 @@ img{
     cursor: pointer;
 }
 
-.menu button{
+.menu button:not(.btn-cotizar){
     border: none;
     background: none;
     cursor: pointer;
@@ -70,12 +88,7 @@ img{
 }
 
 .contact-btn{
-    border: none;
-    text-decoration: none;
-    color: #111;
-
-    padding: 14px 28px;
-    border-radius: 14px;
+    color:#111;
 
     font-weight: 500;
     transition: .3s ease;
@@ -84,6 +97,9 @@ img{
 .btn-cotizar{
     background: #3B82F6;
     color: white;
+    border: none;
+    opacity: 1;
+    visibility: visible;
 
     padding: 14px 28px;
     border-radius: 14px;
@@ -139,6 +155,7 @@ img{
 
     transform: translateY(0);
 }
+
 
 .hero{
     width:100%;
@@ -975,4 +992,51 @@ img{
     background:#3B82F6;
     color:white;
     border-color:#3B82F6;
+}
+
+.contact-menu{
+    position: relative;
+}
+
+.contact-dropdown{
+    position: absolute;
+    top: 60px;
+    right: 0;
+
+    width: 280px;
+
+    background: #ff0020;
+    color: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition: .3s ease;
+
+    z-index: 2000;
+}
+
+.contact-dropdown.active{
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.contact-dropdown p,
+.contact-dropdown strong{
+    color: white;
+}
+
+.contact-title{
+    font-weight: 700;
+    margin-bottom: 15px;
 }

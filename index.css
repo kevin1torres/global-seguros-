@@ -92,7 +92,7 @@ p{
     cursor: pointer;
 }
 
-.menu button{
+.menu button:not(.btn-cotizar){
     border: none;
     background: none;
     cursor: pointer;
@@ -105,7 +105,6 @@ p{
     text-decoration: none;
     color: #111;
 
-    padding: 14px 28px;
     border-radius: 14px;
 
     font-weight: 500;
@@ -115,7 +114,8 @@ p{
 .btn-cotizar{
     background: #3B82F6;
     color: white;
-
+    
+    border: none;
     padding: 14px 28px;
     border-radius: 14px;
 
